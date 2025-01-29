@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #947e1a;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+header .logo h1 {
+    margin-bottom: 0;
+    font-size: large;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sobre {
+    display: inline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre .coluna-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.sobre .coluna-texto {
+    max-width: 600px;
+}
+
+.produtos .container {
+    text-align: center;
+}
+
+.produtos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.produto p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.produto button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .body {
+        max-width: 90%;
+    }
+
+    .produtos-lista {
+        grid-template-columns: 49% 49%;
+    }
+
+    header img {
+        background-color: #947e1a;
+        color: white;
+        text-align: center;
+        justify-content: space-between;
+        display: flex;
+    }
+}
